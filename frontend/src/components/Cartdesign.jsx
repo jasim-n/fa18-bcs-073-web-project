@@ -57,7 +57,7 @@ const Cartdesign = (products) => {
           <ul className="list-group list-group-flush">
             <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
               Temporary amount
-              <span>$25.98</span>
+              <span>{JSON.parse( localStorage.getItem("totals"))} rupee</span>
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center px-0">
               Shipping
@@ -70,7 +70,7 @@ const Cartdesign = (products) => {
                   <p className="mb-0">(including VAT)</p>
                 </strong>
               </div>
-              <span><strong>$53.98</strong></span>
+              <span><strong>{JSON.parse( localStorage.getItem("totals"))} rupee</strong></span>
             </li>
           </ul>
           <button type="button" className="btn btn-primary btn-block">go to checkout</button>

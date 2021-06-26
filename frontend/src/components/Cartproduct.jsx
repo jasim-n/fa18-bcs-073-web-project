@@ -12,7 +12,10 @@ const Cartproduct = () => {
        <div style={{display:"none"}}>   {
           
         b= JSON.parse( sessionStorage.getItem('product_id['+JSON.stringify({n})+']'))
-         }</div>
+         
+         }
+         {c=JSON.parse( localStorage.getItem("totals"))}
+         { localStorage.setItem("totals", c+(b[2]*b[4])) }</div>
          <p>item no#{n+1}</p>
         <div className="row mb-4">
             <div className="col-md-5 col-lg-3 col-xl-3">
@@ -30,10 +33,9 @@ const Cartproduct = () => {
               <div>
                 <div className="d-flex justify-content-between">
                   <div>
+                   
                     <h5>{b[1]}</h5>
-                    <p className="mb-3 text-muted text-uppercase small">Shirt - blue</p>
-                    <p className="mb-2 text-muted text-uppercase small">Color: blue</p>
-                    <p className="mb-3 text-muted text-uppercase small">Size: M</p>
+                    price:
                   </div>
                   
                 </div>

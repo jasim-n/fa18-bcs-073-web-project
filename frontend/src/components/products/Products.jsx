@@ -16,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
   },
 }));
+{
+  if(sessionStorage.length==0){
+    let a=0
+  localStorage.setItem('totals',a)
+  }
+}
 {if(!sessionStorage.length){ let a=0
   localStorage.setItem('totals',a)}}
 const Products = (props) => {
