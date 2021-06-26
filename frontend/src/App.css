@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&display=swap');
+html{
+  font-family: 'Bodoni Moda', serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.descript{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-p{
+  width: 40%;
+  height: 100%;
+  background-image: linear-gradient(rgb(180, 176, 176),#fff);
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 5rem;
+  text-align: center;
+}
+.descript img{
+  width: 50%;
+  height: 70%;
+  border-radius: 2rem;
+}
+.row-r{
+  flex-direction: row-reverse;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.card:hover{
+transform: scale(1.5);
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
