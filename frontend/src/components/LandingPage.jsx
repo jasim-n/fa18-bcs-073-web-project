@@ -15,13 +15,13 @@ export default function LandingPage(props)
 {
     var items = [
         {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!",
+            name: "available",
+            description: "",
             img:"https://wallpapercave.com/wp/wp1882738.jpg"
         },
         {
-            name: "Random Name #2",
-            description: "Hello World!",
+            name: "new arrival",
+            description: "",
             img:"https://wallpaperaccess.com/full/1602660.jpg"
         }
     ]
@@ -29,7 +29,7 @@ export default function LandingPage(props)
         Aos.init({duration:2000});
     },[]);
     return (
-        <div><Carousel animation="slide" interval="5000" >
+        <div style={{marginTop:"7rem"}}><Carousel animation="slide" interval="5000" >
             {
                 items.map( (item, i) => <Item key={i} item={item}  /> )
             }
